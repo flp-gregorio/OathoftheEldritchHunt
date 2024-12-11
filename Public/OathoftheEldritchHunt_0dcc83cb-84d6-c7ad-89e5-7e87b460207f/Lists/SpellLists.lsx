@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<save>
+    <version major="4" minor="7" revision="1" build="3"/>
+    <region id="SpellLists">
+        <node id="root">
+            <children>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Paladin Eldritch level 1"/>
+                    <attribute id="Spells" type="LSString" value="Target_RelentlessPursuer"/>
+                    <attribute id="UUID" type="guid" value="2da78e17-3a61-4cf6-9154-fa1d4297da84"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Paladin Eldritch Spells level 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_FaerieFire;Projectile_SpectralSlash;"/>
+                    <attribute id="UUID" type="guid" value="0fe642dd-764e-4f5d-a0f4-79ae636beb3b"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Paladin Eldritch Spells level 5"/>
+                    <attribute id="Spells" type="LSString" value="Target_Moonbeam;Target_HoldPerson"/>
+                    <attribute id="UUID" type="guid" value="da270096-162f-4cbd-ba39-f3ca6ed1f762"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Paladin Eldritch level 7 (Aura)"/>
+                    <attribute id="Spells" type="LSString" value="Shout_AuraOf_EldritchHunt;"/>
+                    <attribute id="UUID" type="guid" value="e6d4a76f-2ac0-4a1a-a319-6270d4cfa7e1"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Paladin Eldritch Spells level 9"/>
+                    <attribute id="Spells" type="LSString" value="Projectile_SpectralFury;Target_EvardGrasp"/>
+                    <attribute id="UUID" type="guid" value="6bb58966-686b-4bef-8768-06b1d9b9f1ad"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Paladin Eldritch Spells level 13"/>
+                    <attribute id="Spells" type="LSString" value="Target_BlackTentacles;Target_Bane"/>
+                    <attribute id="UUID" type="guid" value="404cf1d2-b44d-46c1-857e-eb71ef5e4be2"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Paladin Eldritch Spells level 17"/>
+                    <attribute id="Spells" type="LSString" value="Target_HoldMonster;Shout_DispelEvilAndGood"/>
+                    <attribute id="UUID" type="guid" value="70f5658b-1190-44d4-a4dd-617f0b7ac079"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Paladin Eldritch level 20"/>
+                    <attribute id="Spells" type="LSString" value="Shout_PerfectedHunter"/>
+                    <attribute id="UUID" type="guid" value="c5094e9c-7813-4492-a868-212ae56caf78"/>
+                </node>
+                <node id="SpellList">
+                    <attribute id="Name" type="FixedString" value="Paladin Eldritch level 3"/>
+                    <attribute id="Spells" type="LSString" value="Target_EldritchPrey"/>
+                    <attribute id="UUID" type="guid" value="0e548b98-0000-44ba-9c5c-9ba1f5fc1995"/>
+                </node>
+            </children>
+        </node>
+    </region>
+</save>

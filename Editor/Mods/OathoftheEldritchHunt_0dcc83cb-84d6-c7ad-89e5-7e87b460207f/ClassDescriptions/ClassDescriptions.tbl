@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="a86b6e82-0a7f-47cb-bff1-a0a6d161fa30">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="Name" type="NameTableFieldDefinition" value="New_Stat_31" />
+        <field name="UUID" type="IdTableFieldDefinition" value="f583d52d-08b3-4645-9194-19141e251730" />
+        <field name="ParentUUID" type="GuidObjectTableFieldDefinition" value="ff4d9497-023c-434a-bd14-82fc367e991c" />
+        <field name="NameFS" type="FixedStringTableFieldDefinition" value="EldritchHunt" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h861e5a1bgb255g0a95gb34bga3d5f70e64d1" version="2" />
+        <field name="ProgressionTableUUID" type="GuidTableFieldDefinition" value="9d2143dd-785d-4eca-bae3-6177a4fd0680" />
+        <field name="PrimaryAbility" type="EnumerationTableFieldDefinition" value="Strength" enumeration_type_name="Ability" version="1" />
+        <field name="SpellCastingAbility" type="EnumerationTableFieldDefinition" value="Charisma" enumeration_type_name="Ability" version="1" />
+        <field name="LearningStrategy" type="EnumerationTableFieldDefinition" value="AllChildren" enumeration_type_name="LearningStrategy" version="1" />
+        <field name="CharacterCreationPose" type="GuidTableFieldDefinition" value="0f07ec6e-4ef0-434e-9a51-1353260ccff8" />
+        <field name="ClassEquipment" type="FixedStringTableFieldDefinition" value="EQP_CC_Paladin_EldritchHunt" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hc5312527gfd20g2a1eg488cg119c522dbced" version="1" />
+        <field name="Tags" type="GuidObjectListTableFieldDefinition" value="00000000-0000-0000-0000-000000000000;7c89622b-4194-41df-b2ff-145a5056ee49" />
+        <field name="MustPrepareSpells" type="BoolTableFieldDefinition" value="True" />
+        <field name="SoundClassType" type="FixedStringTableFieldDefinition" value="Paladin" />
+        <field name="SpellList" type="GuidObjectTableFieldDefinition" value="5d53e0f2-12a3-4a9e-819e-3d1c5b64496b" />
+        <field name="ShortName" type="TranslatedStringTableFieldDefinition" handle="h103c6d78ga9b9gc5b8g7494g88ea83794e42" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

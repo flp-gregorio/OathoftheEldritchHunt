@@ -1,0 +1,10 @@
+new entry "HUNTER_INVISIBILITY"
+type "StatusData"
+data "StatusType" "INVISIBLE"
+using "GREATER_INVISIBILITY"
+data "DisplayName" "hafec81f6g122agc386g53f0g2150629df018;1"
+data "Description" "haa78eddbg03ceg7c72ga35ag269042f9e879;1"
+data "Boosts" "IgnoreLeaveAttackRange;Invisibility();Advantage(AttackRoll);DetectDisturbancesBlock(true);"
+data "StatusPropertyFlags" "UnavailableInActiveRoll;ExcludeFromPortraitRendering;DisableOverhead;DisableCombatlog;DisablePortraitIndicator"
+data "RemoveEvents" "None"
+

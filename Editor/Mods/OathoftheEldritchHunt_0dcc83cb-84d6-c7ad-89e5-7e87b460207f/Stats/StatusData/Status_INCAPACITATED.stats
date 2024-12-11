@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="05f87e82-499d-4e0b-8dd7-859b8b3e5beb">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="139b29db-0f94-43cf-a6c1-3061e6e204f2" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVARD_GRASP" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="7e487a04-156c-40d7-89d3-7f219ca98fc5" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he883e145g17bdgcdb1g6273gf7fc6800ab94" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbd0ecc4bg2767gd3efg8f2bg3021e1a142f1" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="AbilityFailedSavingThrow(Strength);AbilityFailedSavingThrow(Dexterity);Advantage(AttackTarget);ActionResourceBlock(Movement);ActionResourceBlock(BonusAction);ActionResourceBlock(Reaction);DetectDisturbancesBlock(true);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" clear_inherited_value="true" value="" />
+        <field name="TooltipSave" type="StringTableFieldDefinition" value="Strength" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="OverheadOnTurn" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnTurn" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="5bbb6f34-cab8-46a0-a3cb-0d89343fa572" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Evocation_EvardsBlackTentacles" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

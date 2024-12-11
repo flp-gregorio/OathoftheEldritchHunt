@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="67731907-4ad8-4be6-9326-d6f5b982140e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3edee1fc-9966-45cd-9a67-8ae139fd4068" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="1" />
+        <field name="SpellSchool" type="EnumerationTableFieldDefinition" value="Conjuration" enumeration_type_name="SpellSchool" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="6" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeSpellAttack)" />
+        <field name="Trajectories" type="StringTableFieldDefinition" value="6dc92104-d1ad-4cda-8154-26e61ea45f27" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_SpectralSlash" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1cfbccf5g005cg7783ge503ga5fa83114daf" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h3864d5dcg9a4ag083cgf5a2gc8231ee0a919" version="3" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(1d8,MainMeleeWeaponDamageType)" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="71369b20-18f1-4d33-89ad-a99b10f0444c,,;c12054bc-4d96-47c5-8483-989afde03bd4,,;20aaabc2-067d-4355-86a0-40901d3938d8,,;2a3d2709-24d3-4c6d-ae25-546d1fd4ccb2,,;3b9da8d4-3eff-43bd-9eaa-1c13fba0045e,,;,,;d5be826c-163f-4cc3-b195-2101e32e3da2,,;,,;,," />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Melee" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="TargetEffect" type="GuidObjectTableFieldDefinition" value="cd8346e8-7c3c-4445-ae60-be815bb16805" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(1d8,Slashing);ApplyStatus(SELF,SPECTRAL_SLASH_OWNER,100,1);ApplyStatus(SPECTRAL_SLASH,100,1)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,MainMeleeWeaponDamageType)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Slashing);Distance(6)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellCategory" type="EnumerationListTableFieldDefinition" value="SC_TargetSingle;SC_IntentDamage" enumeration_type_name="SpellCategoryFlags" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h6ad4f354gf935g716bg99f9g943136c29680" version="2" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9bbba268-694e-4ed4-b7cc-8eb5fca5893d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3edee1fc-9966-45cd-9a67-8ae139fd4068" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="12" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(2d8,Slashing);ApplyStatus(SELF,SPECTRAL_SLASH_OWNER,100,1);ApplyStatus(SPECTRAL_SLASH,100,1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,Slashing);Distance(12)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(2d8,MainMeleeWeaponDamageType)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_SpectralSlash" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="2" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b290a319-987a-4b47-9140-2c0ad69a912b" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3edee1fc-9966-45cd-9a67-8ae139fd4068" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(3d8,Slashing);ApplyStatus(SELF,SPECTRAL_SLASH_OWNER,100,1);ApplyStatus(SPECTRAL_SLASH,100,1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(3d8,Slashing);Distance(18)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(3d8,MainMeleeWeaponDamageType)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_SpectralSlash" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="3" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:3" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c8cc3577-61de-4d40-a1ec-16402a57cf1d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3edee1fc-9966-45cd-9a67-8ae139fd4068" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="24" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Slashing);ApplyStatus(SELF,SPECTRAL_SLASH_OWNER,100,1);ApplyStatus(SPECTRAL_SLASH,100,1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Slashing);Distance(24)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,MainMeleeWeaponDamageType)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_SpectralSlash" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="98ab6416-0c0b-475d-9d0d-b2038d0170e0" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3edee1fc-9966-45cd-9a67-8ae139fd4068" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="30" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(5d8,Slashing);ApplyStatus(SELF,SPECTRAL_SLASH_OWNER,100,1);ApplyStatus(SPECTRAL_SLASH,100,1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(5d8,Slashing);Distance(30)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(5d8,MainMeleeWeaponDamageType)" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_SpectralSlash" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="BonusActionPoint:1;SpellSlotsGroup:1:1:5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ee9e4e89-b56b-429b-b668-a659adce3cab" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralFury" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="3edee1fc-9966-45cd-9a67-8ae139fd4068" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="3" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="9" />
+        <field name="AmountOfTargets" type="StringTableFieldDefinition" value="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h5d590923gd48bge04dg1e6fg73feeeed43cc" version="3" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(4d8,MainMeleeWeaponDamageType)" />
+        <field name="TooltipUpcastDescription" type="GuidObjectTableFieldDefinition" value="66388a6f-44dd-4c9f-a9e7-910c50e70755" />
+        <field name="TooltipUpcastDescriptionParams" type="StringTableFieldDefinition" value="DealDamage(2d8,MainMeleeWeaponDamageType)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:3" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(4d8,Slashing);ApplyStatus(SELF,SPECTRAL_SLASH_OWNER,100,1);ApplyStatus(SPECTRAL_SLASH,100,1)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="ha90914c5g922egeb91g38c5gbcb3e4579b30" version="1" />
+        <field name="TargetFloor" type="StringTableFieldDefinition" value="-1" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="not Self() and not Dead()" />
+        <field name="ProjectileCount" type="StringTableFieldDefinition" value="1" />
+        <field name="CastTargetHitDelay" type="IntegerTableFieldDefinition" value="100" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(4d8,Slashing);Distance(9)" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="HasVerbalComponent;HasSomaticComponent;IsSpell;IsHarmful" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="SpellCategory" type="EnumerationListTableFieldDefinition" value="SC_IntentDamage;SC_TargetMultiselect" enumeration_type_name="SpellCategoryFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Spell_Conjuration_SpectralFury" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" clear_inherited_value="true" />
+        <field name="ExtraDescriptionParams" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="5c190aed-38b8-4e05-ae04-1c9a74a19317" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralFury_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee9e4e89-b56b-429b-b668-a659adce3cab" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="4" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(6d8,Slashing);ApplyStatus(SELF,SPECTRAL_SLASH_OWNER,100,1);ApplyStatus(SPECTRAL_SLASH,100,1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(6d8,Slashing);Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(6d8,MainMeleeWeaponDamageType)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:4" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_SpectralFury" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="4" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="f5f8b2e2-68ea-491c-8228-1bfbc14d871d" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralFury_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="ee9e4e89-b56b-429b-b668-a659adce3cab" />
+        <field name="Level" type="IntegerTableFieldDefinition" value="5" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(8d8,Slashing);ApplyStatus(SELF,SPECTRAL_SLASH_OWNER,100,1);ApplyStatus(SPECTRAL_SLASH,100,1)" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(8d8,Slashing);Distance(9)" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(8d8,MainMeleeWeaponDamageType)" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1;SpellSlotsGroup:1:1:5" />
+        <field name="RootSpellID" type="StringTableFieldDefinition" value="Projectile_SpectralFury" />
+        <field name="PowerLevel" type="IntegerTableFieldDefinition" value="5" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="e2a8d59b-0e34-4a7c-bf5f-db7a2bb34cde">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3028e986-c7e0-4770-90d2-a54ae0ed3c02" />
+        <field name="Name" type="NameTableFieldDefinition" value="ELDRITCH_PREY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="47737f9a-5518-418e-8d25-4320f6dc2ae8" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h173aa8begbe4dg2aaag1964ga5cb10158dd7" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfbe4e9bfgb226gfdb9g3452gd259913d9004" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Eldritch_EldritchPrey" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:IF(not HasStatus('ELDRITCH_PREY') and not IsDowned() and (not HasStatus('ELDRITCH_PREY_OWNER', context.Source) or HasStatus('ELDRITCH_PREY_REAPPLY', context.Source))): ApplyStatus(SELF, 'AI_HELPER_ELDRITCH_PREY_OWNER', 100, -1); AI_ONLY:IF(not HasStatus('ELDRITCH_PREY') and not IsDowned() and (not HasStatus('ELDRITCH_PREY_OWNER', context.Source) or HasStatus('ELDRITCH_PREY_REAPPLY', context.Source))): ApplyStatus(SELF, 'AI_HELPER_ELDRITCH_PREY', 100, -1);" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ELDRITCH_PREY" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF, ELDRITCH_PREY_OWNER);IF(RemoveCause(StatusRemoveCause.Death)):ApplyStatus(SELF, ELDRITCH_PREY_REAPPLY, 100, 3,,,,,true);IF(RemoveCause(StatusRemoveCause.Condition)):ApplyStatus(SELF, ELDRITCH_PREY_REAPPLY, 100, 3,,,,,true);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D4Cantrip),Necrotic);Distance(9)" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="6354ab21-4669-4a1c-aa5a-c7eb516f6a21" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="714da2f7-18ab-4f07-8f2a-6de20d1cd1f8" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="77f2b1ff-30d1-47c3-80f1-ba8d9b2ea384" />
+        <field name="Name" type="NameTableFieldDefinition" value="ELDRITCH_PREY_OWNER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="f59491f3-8d7b-4b0e-bae1-6a630d8e6c42" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h477e4eadg116bg99e0g6897gfdfda5ac6c7d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h160c3939g49acg27a9gee69g7ef4209126b0" version="3" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Eldritch_EldritchPrey" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ELDRITCH_PREY_OWNER" />
+        <field name="Passives" type="StringTableFieldDefinition" value="EldritchHunt" />
+        <field name="TickFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:ApplyStatus(AI_HELPER_ELDRITCH_PREY_OWNER,100,1);" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D4Cantrip), Necrotic)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Target_HuntThePrey);" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="StatusId('ELDRITCH_PREY_REAPPLY')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="b4b010e3-8e08-4986-861d-970a2b6dbae9" />
+        <field name="Name" type="NameTableFieldDefinition" value="ELDRITCH_PREY_REAPPLY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="17abf1d1-89f7-4525-8d48-afef7173b00a" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h7bf45952g2b64geb7bg7240g6a1e7e02caf8" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Eldritch_EldritchPrey" />
+        <field name="StackId" type="StringTableFieldDefinition" value="ELDRITCH_PREY_REAPPLY" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpellVariant(SpellId('Target_EldritchPrey'),ModifyIconGlow(),ModifyTooltipDescription(),ModifyUseCosts(Replace,ChannelOath,0,0,ChannelOath))" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h9c696f1eg71f6gb3d3ge900gf5ec03be019b" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="StatusId('ELDRITCH_PREY_OWNER')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatusEvent" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="57012982-1a63-4fdb-8fe8-c25542e079da" />
+        <field name="Name" type="NameTableFieldDefinition" value="AI_HELPER_ELDRITCH_PREY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="71fa2f58-63af-465b-8cf0-f0cda36e1bf0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d5024bb7-cfb2-430a-b237-e06b6cb0d46f" />
+        <field name="Name" type="NameTableFieldDefinition" value="AI_HELPER_ELDRITCH_PREY_OWNER" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="610396dc-74c9-4750-8147-80479d896e55" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="WeaponDamage(LevelMapValue(D4Cantrip),Necrotic);" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="37a30def-9ac4-4301-b138-307781f8a77f" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPECTRAL_SLASH" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="HasStatus('KNOCKED_OUT')" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnAttacked" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat;DisableOverhead;DisablePortraitIndicator;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="IF(not HasStatus('SPECTRAL_SLASH') and not IsDowned() and not HasStatus('SPECTRAL_SLASH_OWNER', context.Source)): ApplyStatus(SELF, 'SPECTRAL_SLASH_OWNER', 100, -1); IF(not HasStatus('SPECTRAL_SLASH') and not IsDowned() and not HasStatus('SPECTRAL_SLASH_OWNER', context.Source)): ApplyStatus(SELF, 'SPECTRAL_SLASH', 100, -1);" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="RemoveStatus(SELF, SPECTRAL_SLASH_OWNER); IF(RemoveCause(StatusRemoveCause.Death) or RemoveCause(StatusRemoveCause.Condition)): ApplyStatus(SELF, SPECTRAL_SLASH, 100, -1,,,,,true);&#xD;&#xA;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9b271522-a5c3-4b52-a4f4-bc743a4357d3" />
+        <field name="Name" type="NameTableFieldDefinition" value="SPECTRAL_SLASH_OWNER" />
+        <field name="Passives" type="StringTableFieldDefinition" value="SpectralSlash" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockSpell(Rush_SpectralSlash)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e4966ea6-a68e-44de-9adf-a570660a4f53" />
+        <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_HUNT" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="a4655c28-b6ac-49c0-ad64-584a3e938a76" />
+        <field name="StackId" type="StringTableFieldDefinition" value="AURA_OF_HUNT" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hfc12f158gddadgaac5g28e9g91ea8532dc5b" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbf4225b5g4a83g5560g9245g2c0ed45a5b77" version="8" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="max(1, CharismaModifier+ProficiencyBonus)" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Ally()):ApplyStatus(AURA_OF_HUNT_BUFF);TARGET:IF(not HasAnyStatus({'SG_Unconscious','SG_Incapacitated'},{},{},context.Source) and not Ally() and HasStatus('SG_Invisible')):ApplyStatus(SEE_INVISIBILITY_SEEN)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('HUMANOID') and HasAnyTags({'ABERRATION', 'FIEND', 'FEY', 'CELESTIAL', 'MONSTROSITY'})):RollBonus(Attack, max(1, CharismaModifier+ProficiencyBonus));DarkvisionRangeMin(3);ActiveCharacterLight(051648e6-f05a-e41f-e398-ffd5cd148989);StatusImmunity(SG_Blinded);Tag(BLINDSIGHT)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;IgnoreResting;ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHunt" />
+        <field name="AuraFlags" type="EnumerationListTableFieldDefinition" value="CanAffectInvisibleItems;AIIgnoreOnSelf" enumeration_type_name="AuraFlags" version="1" />
+        <field name="OnApplyFunctors" type="FunctorsTableFieldDefinition" value="AI_ONLY:IF(not HasStatus('SEE_INVISIBILITY')):ApplyStatus(AI_HELPER_SEEINVISIBILITY,100,3);" />
+        <field name="ApplyEffect" type="GuidObjectTableFieldDefinition" value="bc884964-24a8-407f-8099-6d2747b1a734" />
+        <field name="StatusEffect" type="GuidObjectTableFieldDefinition" value="58f32bba-fd27-4aea-852b-9de6721a59d5" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8105afed-197f-4ef8-94e6-3a920d65975a" />
+        <field name="Name" type="NameTableFieldDefinition" value="AURA_OF_HUNT_BUFF" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="928fe843-cf3e-4030-9b98-7d92d5dd57a8" />
+        <field name="StackId" type="StringTableFieldDefinition" value="AURA_OF_HUNT" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h8b99a32dg1beegd853g5c23g0b07f006a319" version="8" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="max(1,Cause.CharismaModifier+Cause.ProficiencyBonus)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(not Tagged('HUMANOID') and HasAnyTags({'ABERRATION', 'FIEND', 'FEY', 'CELESTIAL', 'MONSTROSITY'})):RollBonus(Attack, max(1, Cause.CharismaModifier+Cause.ProficiencyBonus));" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hafd09aceg76fcg4e21ga3eeg5d6bb93fed6b" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHunt" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8f32baa9-6273-4c60-8c37-50c2d5606ced" />
+        <field name="Name" type="NameTableFieldDefinition" value="RELENTLESS_PURSUER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hee750131g212eg59c4ga41dga457dc4b6c40" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RELENTLESS_PERSUER" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd0bd33d5g5e93g0b0bg37e0g95431c8ce0ae" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_RelentlessPursuer" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="InitiateCombat;BringIntoCombat" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a604775c-df52-4df7-ba2e-74509aa7ffe3" />
+        <field name="Name" type="NameTableFieldDefinition" value="RELENTLESS_PURSUER_OWNER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h6182b5e2g12d5gae6ega44fgd9c5f0866747" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="RELENTLESS_PERSUER_OWNER" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="5" />
+        <field name="Passives" type="StringTableFieldDefinition" value="RelentlessPursuer" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableCombatlog;DisableOverhead;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="StatusGroups" type="EnumerationListTableFieldDefinition" value="SG_RemoveOnRespec" enumeration_type_name="StatusGroupFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h15844347g2a7fgc080g7715gfa44e05ee5bf" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_RelentlessPursuer" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(CharismaModifier+ProficiencyBonus)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="ab27e553-e09d-4272-8194-837bc1f08f27" />
+        <field name="Name" type="NameTableFieldDefinition" value="PERFECTED_HUNTER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4cf3fd3eg5216g81b4g67fdgd2924915bb81" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hbaefaf54gdef9gfc32gf746g502fdffd4b5a" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
+        <field name="StackId" type="StringTableFieldDefinition" value="PERFECTED_HUNTER" />
+        <field name="StackPriority" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Passives" type="StringTableFieldDefinition" value="PerfectedHunter" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="ApplyToDead;IgnoreResting;ForceOverhead" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="fc0f3c3b-d367-4df1-b4d3-d21b0137c6d7" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNRELENTING_PURSUIT_INTERRUPT_SETUP" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he33f6e04g6139g7d34gf553g703fd93f8bb5" version="3" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h44827f71g1877g57bbg9b8bgeb8a254c935d" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Eldritch_EldritchPrey_Teleport" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="6" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="IF(Enemy()):ApplyStatus(UNRELENTING_PURSUIT_INTERRUPT_AURA,100,-1)" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="UnlockInterrupt(Interrupt_RelentlessPursuit)" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnStatusRemoved" enumeration_type_name="StatusEvent" version="1" />
+        <field name="RemoveConditions" type="RollConditionsTableFieldDefinition" value="StatusId('ELDRITCH_PREY_OWNER')" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="89d25bd7-c48c-421b-a44f-1e188a1ad986" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNRELENTING_PURSUIT_INTERRUPT_AURA" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he74a7be3gd377g43e5gb690g8566b10624e1" version="2" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="OnRemoveFunctors" type="FunctorsTableFieldDefinition" value="IF(not RemoveCause(StatusRemoveCause.Death) and not RemoveCause(StatusRemoveCause.TimeOut) and not RemoveCause(StatusRemoveCause.Condition) and not DistanceToTargetGreaterThan(9,context.Source)):ApplyStatus(SWAP,UNRELENTING_PURSUIT_INTERRUPT_TRIGGER,100,1,context.Source)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="378401c9-d9ce-417b-8ce5-40b2651dbe4b" />
+        <field name="Name" type="NameTableFieldDefinition" value="UNRELENTING_PURSUIT_INTERRUPT_TRIGGER" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h2fb687aeg7159g1fa7gc424gdfc0eeeeb285" version="2" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Overwrite" enumeration_type_name="StatusStackType" version="1" />
+        <field name="TickType" type="EnumerationTableFieldDefinition" value="EndTurn" enumeration_type_name="TickType" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="OnCombatEnded" enumeration_type_name="StatusEvent" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="1fb3cb43-fb9f-4ee2-8fb3-907d8629dbf8" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVARDS_GRASP_TECHNICAL" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h1550cadcg2e5cg2b65ge99bg350ee20914a1" version="1" />
+        <field name="StackId" type="StringTableFieldDefinition" value="EVARDS_GRASP_TECHNICAL" />
+        <field name="StackType" type="EnumerationTableFieldDefinition" value="Ignore" enumeration_type_name="StatusStackType" version="1" />
+        <field name="AuraRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="AuraStatuses" type="StringTableFieldDefinition" value="ApplyStatus(EVARDS_GRASP_TECHNICAL_2,100,-1)" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a26abe00-393c-4a2c-850f-ab7c92101275" />
+        <field name="Name" type="NameTableFieldDefinition" value="EVARDS_GRASP_TECHNICAL_2" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h5bafd012g2f7egc1dfg83c3g7a2c6c83ee4c" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('EVARDS_GRASP_TECHNICAL',context.Target,context.Source) and IsWeaponAttack()):MinimumRollResult(Damage,20);" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

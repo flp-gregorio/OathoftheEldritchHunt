@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="5bbb6f34-cab8-46a0-a3cb-0d89343fa572" OwnerUUID="bbe906ed-b96e-4a21-b133-8312c65f545d" Name="EVARDS_GRASP_StatusEffect">
+  <EffectInfo UUID="76b8d3d6-6c89-49a2-a7fa-a54071db8fb0" EffectResourceGuid="90e2cb22-f732-efb5-174b-e032a9754902" DetachSource="false" DetachTarget="false" KeepRotation="true" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_Root" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

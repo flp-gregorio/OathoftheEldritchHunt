@@ -1,0 +1,5 @@
+new entry "PASSIVE_ELDRITCH_PREY"
+type "StatusData"
+data "StatusType" "EFFECT"
+using "PASSIVE_HUNTERS_MARK"
+

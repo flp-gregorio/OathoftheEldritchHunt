@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3f5063e7-e02b-4849-a503-9ba01dc6e2e6">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2da78e17-3a61-4cf6-9154-fa1d4297da84" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin Eldritch level 1" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_RelentlessPursuer" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0e548b98-0000-44ba-9c5c-9ba1f5fc1995" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin Eldritch level 3" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_EldritchPrey" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="0fe642dd-764e-4f5d-a0f4-79ae636beb3b" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin Eldritch Spells level 3" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_FaerieFire;Projectile_SpectralSlash;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="da270096-162f-4cbd-ba39-f3ca6ed1f762" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin Eldritch Spells level 5" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_Moonbeam;Target_HoldPerson" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="e6d4a76f-2ac0-4a1a-a319-6270d4cfa7e1" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin Eldritch level 7 (Aura)" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_AuraOf_EldritchHunt;" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="6bb58966-686b-4bef-8768-06b1d9b9f1ad" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin Eldritch Spells level 9" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Projectile_SpectralFury;Target_EvardGrasp" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="404cf1d2-b44d-46c1-857e-eb71ef5e4be2" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin Eldritch Spells level 13" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_BlackTentacles;Target_Bane" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="70f5658b-1190-44d4-a4dd-617f0b7ac079" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin Eldritch Spells level 17" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Target_HoldMonster;Shout_DispelEvilAndGood" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c5094e9c-7813-4492-a868-212ae56caf78" />
+        <field name="Name" type="NameTableFieldDefinition" value="Paladin Eldritch level 20" />
+        <field name="Spells" type="StringTableFieldDefinition" value="Shout_PerfectedHunter" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

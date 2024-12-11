@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="714da2f7-18ab-4f07-8f2a-6de20d1cd1f8" OwnerUUID="6031a018-7658-4d5b-ae48-227d18b79bf4" Name="ELDRITCH_PREY_StatusEffect">
+  <EffectInfo UUID="1b0ddf41-d9b3-42e4-9a67-289f581f9afb" EffectResourceGuid="442e4267-07d6-52f0-c34f-d8d3716e05ac" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_OverheadFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

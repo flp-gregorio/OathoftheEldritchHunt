@@ -1,0 +1,6 @@
+new entry "ARM_ScaleMail_Body_Paladin_EldritchHunt"
+type "Armor"
+using "ARM_Plate_Body"
+data "RootTemplate" "76e61f3b-a9a8-48ec-acf2-37a3e4419c92"
+data "PassivesOnEquip" ""
+

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="bbe0e72e-fa2a-41d2-be9a-c604af561421">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="bbd0eb74-1e4a-40cf-b075-185e1850edba" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash" />
+        <field name="Cooldown" type="EnumerationTableFieldDefinition" value="OncePerTurn" enumeration_type_name="CooldownType" version="1" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="6" />
+        <field name="HitRadius" type="FloatTableFieldDefinition" value="1" />
+        <field name="SpellSuccess" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType); ExecuteWeaponFunctors(MainHand)" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Character() and not Ally() and HasStatus('SPECTRAL_SLASH')" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Rush_SpectralSlash" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h4c856aa1gb8e3g6ae4gff03g44b92f739b8f" version="1" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="DealDamage(MainMeleeWeapon, MainMeleeWeaponDamageType)" />
+        <field name="TooltipAttackSave" type="StringTableFieldDefinition" value="MeleeWeaponAttack;Strength" />
+        <field name="TooltipPermanentWarnings" type="StringTableFieldDefinition" value="aa8beb3b-9199-4b22-9f73-26e2ae0ab6af" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Action_Cast_SpringAttack" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="Requirements" type="StringTableFieldDefinition" value="!Immobile" />
+        <field name="CycleConditions" type="StringTableFieldDefinition" value="Enemy() and not Dead()" />
+        <field name="UseCosts" type="StringTableFieldDefinition" value="ActionPoint:1" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="8b8bb757-21ce-4e02-a2f3-97d55cf2f90b,,;7bfeb9dd-1348-45c7-bff9-ed42f8cd43a1,,;b780092c-cc12-43d5-b60e-acbac3fdceed,,;abbeb7de-2128-4b16-95e5-7b9d7b1af2f9,,;7bb52cd4-0b1c-4926-9165-fa92b75876a3,,;,,;0b07883a-08b8-43b6-ac18-84dc9e84ff50,,;,,;,," />
+        <field name="WeaponType" type="EnumerationListTableFieldDefinition" value="Melee" enumeration_type_name="WeaponFlags" version="1" />
+        <field name="SpellFlags" type="EnumerationListTableFieldDefinition" value="IsHarmful;IsAttack;CannotTargetTerrain;IsMelee;Temporary" enumeration_type_name="SpellFlagList" version="1" />
+        <field name="AnimationIntentType" type="EnumerationTableFieldDefinition" value="Aggressive" enumeration_type_name="SpellAnimationIntentType" version="1" />
+        <field name="RechargeValues" type="StringTableFieldDefinition" value="4-6" />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Damage" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="9342eaf4-6a20-44c6-a740-863b0f9c2475" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="4d97dc4c-0b6f-4c87-a65a-6e6f08c186b9" />
+        <field name="HitEffect" type="GuidObjectTableFieldDefinition" value="c3151383-86e9-4876-9e29-28256d6bed7d" />
+        <field name="PreviewEffect" type="GuidObjectTableFieldDefinition" value="1615a7f7-21d9-4dd0-849b-d3c79a57c5ff" />
+        <field name="StopAtFirstContact" type="BoolTableFieldDefinition" value="True" />
+        <field name="HitExtension" type="FloatTableFieldDefinition" value="1" />
+        <field name="OnlyHit1Target" type="BoolTableFieldDefinition" value="True" />
+        <field name="DamageType" type="EnumerationTableFieldDefinition" value="Piercing" enumeration_type_name="Damage Type" version="1" />
+        <field name="Sheathing" type="EnumerationTableFieldDefinition" value="Melee" enumeration_type_name="SpellSheathing" version="1" />
+        <field name="MovementSpeed" type="IntegerTableFieldDefinition" value="40000" />
+        <field name="SpellRoll" type="StringTableFieldDefinition" value="Attack(AttackType.MeleeWeaponAttack)" />
+        <field name="SpellCategory" type="EnumerationListTableFieldDefinition" value="SC_TargetSingle" enumeration_type_name="SpellCategoryFlags" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Projectile_SpectralSlash" />
+        <field name="AIFlags" type="EnumerationListTableFieldDefinition" value="CanNotUse" enumeration_type_name="AIFlags" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h751b7bebg6b9ag863ag01a3gc91a08dd506a" version="1" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="670fbdd4-ef0e-435a-9a4c-f24b0cfefa66" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash_2" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bbd0eb74-1e4a-40cf-b075-185e1850edba" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="12" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(12)" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Projectile_SpectralSlash_2" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="307e3c13-119d-4349-b7d1-6f8252a128fb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash_3" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bbd0eb74-1e4a-40cf-b075-185e1850edba" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="18" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(18)" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Projectile_SpectralSlash_3;Projectile_SpectralFury" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="dc8a2743-92b4-4e0a-8d42-798ac95bc933" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash_4" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bbd0eb74-1e4a-40cf-b075-185e1850edba" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="24" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(24)" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Projectile_SpectralSlash_4;Projectile_SpectralFury" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="2832d770-bc82-4a5f-a7b8-6274fc1fa254" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash_5" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="bbd0eb74-1e4a-40cf-b075-185e1850edba" />
+        <field name="TargetRadius" type="StringTableFieldDefinition" value="30" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(30)" />
+        <field name="FollowUpOriginalSpell" type="StringTableFieldDefinition" value="Projectile_SpectralSlash_5;Projectile_SpectralFury" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

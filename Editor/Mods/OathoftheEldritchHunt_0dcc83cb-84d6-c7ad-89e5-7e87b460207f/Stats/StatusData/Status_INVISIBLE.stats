@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="47014da6-a81c-40a9-9f3c-4a74b6ddc574">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="c1632cec-f5a4-4d6f-b62d-c1da229ea28e" />
+        <field name="Name" type="NameTableFieldDefinition" value="HUNTER_INVISIBILITY" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="8599f8e8-ac20-44db-896c-4ea5c6bf89c4" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hafec81f6g122agc386g53f0g2150629df018" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="haa78eddbg03ceg7c72ga35ag269042f9e879" version="1" />
+        <field name="StatusPropertyFlags" type="EnumerationListTableFieldDefinition" value="UnavailableInActiveRoll;ExcludeFromPortraitRendering;DisableOverhead;DisableCombatlog;DisablePortraitIndicator" enumeration_type_name="StatusPropertyFlags" version="1" />
+        <field name="RemoveEvents" type="EnumerationListTableFieldDefinition" value="None" enumeration_type_name="StatusEvent" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IgnoreLeaveAttackRange;Invisibility();Advantage(AttackRoll);DetectDisturbancesBlock(true);" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

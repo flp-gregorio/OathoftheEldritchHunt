@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="c496009d-a970-44a3-b882-7ed3364dc271">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="a3d38335-b29e-4497-baa4-6d4e73e869a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="Interrupt_RelentlessPursuit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h94a027a7g125agd19dg9fd4g4bd52fedca6e" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h751f047cg7c49g568fg87b6g62a39b2fedbd" version="4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Eldritch_EldritchPrey_Teleport" />
+        <field name="InterruptContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="InterruptContext" version="1" />
+        <field name="InterruptContextScope" type="EnumerationListTableFieldDefinition" value="Self" enumeration_type_name="InterruptContextScope" version="1" />
+        <field name="Container" type="StringTableFieldDefinition" value="YesNoDecision" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('UNRELENTING_PURSUIT_INTERRUPT_TRIGGER') and not IsCurrentTurnInCombat(context.Observer) and IsCurrentTurnInCombat(context.Source) and IsAbleToReact(context.Observer) and Enemy(context.Observer,context.Source) and not HasStatus('SANCTUARY',context.Observer) and not (not Player(context.Source) and Tagged('AI_IGNORED_TARGET')  and not HasStatus('GNOLL_SUDDENRUSH')) and not HasStatus('SHOCKWAVE') and not (HasStatus('MOBILE_NO_AOO', context.Source) and HasStatus('MOBILE_NO_AOO_SOURCE', context.Target)) and not HasStatus('FLAMING_SPHERE_AURA') and not HasStatus('SNEAKING',context.Source) and not HasStatus('SG_Ignore_AOO',context.Source)  and not AnyEntityIsItem() and not HasSpellFlag(SpellFlags.IgnoreAoO, context.Source)" />
+        <field name="Properties" type="StringTableFieldDefinition" value="UseSpell(OBSERVER_SOURCE,Target_HuntThePrey,true,true,true);UseAttack()" />
+        <field name="Cost" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="InterruptDefaultValue" type="EnumerationListTableFieldDefinition" value="Ask;Enabled" enumeration_type_name="InterruptDefaultValue" version="1" />
+        <field name="EnableCondition" type="StringTableFieldDefinition" value="not HasStatus('SG_Blinded')" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
+        <field name="EnableContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied;OnStatusRemoved" enumeration_type_name="StatsFunctorContext" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

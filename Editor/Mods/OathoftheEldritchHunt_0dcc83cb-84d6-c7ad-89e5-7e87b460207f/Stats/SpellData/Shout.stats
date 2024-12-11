@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="9fd4ac7a-fad7-424f-83df-0893eae93c38">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="683c7b7c-d99e-4aac-9201-40cb015c19a8" />
+        <field name="Name" type="NameTableFieldDefinition" value="AuraOf_EldritchHunt" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF, AURA_OF_HUNT,100,-1);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb52d9f30g1d1fg8089gbe27g6bbe6955e905" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h768c2d55g2e78ge294g370agbbbbf7f3eb67" version="10" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="max(1, CharismaModifier+ProficiencyBonus)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(AURA_OF_HUNT,100,-1);" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;62e74220-ba87-4fe7-aa99-9d12cab9d654,,;b1f3f86a-a1fc-43f6-8a2b-0110a9f99ead,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c218f05b-1e12-4298-beff-e4d33a5fa5a5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="8265c6d6-662a-40fe-888b-024af0e2b1b9" />
+        <field name="AreaRadius" type="IntegerTableFieldDefinition" value="3" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Paladin_AuraOfHate_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Paladin_AuraOfHate_L1to3" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h680b41fege55ega6f1gf2b4gce342ec97e03" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_AuraOfHunt" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('AURA_OF_HUNT')" />
+        <field name="TooltipDamageList" type="StringTableFieldDefinition" value="RollBonus(Attack, max(1, CharismaModifier+ProficiencyBonus))" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9d5bf827-a950-4b4a-ac9d-6b50a5d1b727" />
+        <field name="Name" type="NameTableFieldDefinition" value="PerfectedHunter" />
+        <field name="SpellProperties" type="StringTableFieldDefinition" value="ApplyStatus(SELF, PERFECTED_HUNTER,100,10);" />
+        <field name="TargetConditions" type="StringTableFieldDefinition" value="Self()" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_PerfectedHunter" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h804099e8g4d54gf848ga2b1gbc6ac694c07c" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="h9ad05a97g6cbcg592egd4ddge7c73e5b2e22" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
+        <field name="TooltipStatusApply" type="StringTableFieldDefinition" value="ApplyStatus(PERFECTED_HUNTER,100,10);" />
+        <field name="CastSound" type="StringTableFieldDefinition" value="Spell_Cast_Paladin_AuraOfHate_L1to3" />
+        <field name="TargetSound" type="StringTableFieldDefinition" value="Spell_Impact_Paladin_AuraOfHate_L1to3" />
+        <field name="PreviewCursor" type="EnumerationTableFieldDefinition" value="Cast" enumeration_type_name="CursorMode" version="1" />
+        <field name="CastTextEvent" type="StringTableFieldDefinition" value="Cast" />
+        <field name="SpellAnimation" type="CastAnimationsTableFieldDefinition" value="83fb0115-57dd-4cce-ac40-87182b2865e2,,;,,;62e74220-ba87-4fe7-aa99-9d12cab9d654,,;b1f3f86a-a1fc-43f6-8a2b-0110a9f99ead,,;42014429-21fb-412d-bba6-0f8216f5e502,,;,,;43fa5e31-ad7e-47a9-9ca2-f6d40ba8e1cf,,;,,;,," />
+        <field name="VerbalIntent" type="EnumerationTableFieldDefinition" value="Buff" enumeration_type_name="VerbalIntent" version="1" />
+        <field name="SpellStyleGroup" type="EnumerationTableFieldDefinition" value="Class" enumeration_type_name="SpellStyleGroup" version="1" />
+        <field name="RequirementConditions" type="StringTableFieldDefinition" value="not HasStatus('PERFECTED_HUNTER')" />
+        <field name="PrepareEffect" type="GuidObjectTableFieldDefinition" value="c218f05b-1e12-4298-beff-e4d33a5fa5a5" />
+        <field name="CastEffect" type="GuidObjectTableFieldDefinition" value="8265c6d6-662a-40fe-888b-024af0e2b1b9" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

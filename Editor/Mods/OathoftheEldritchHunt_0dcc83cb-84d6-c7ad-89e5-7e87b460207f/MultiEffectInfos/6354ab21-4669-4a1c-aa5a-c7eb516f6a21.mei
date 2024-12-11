@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MultiEffectInfos UUID="6354ab21-4669-4a1c-aa5a-c7eb516f6a21" OwnerUUID="6031a018-7658-4d5b-ae48-227d18b79bf4" Name="ELDRITCH_PREY_ApplyEffect">
+  <EffectInfo UUID="a213341a-2e7a-41f0-b89d-f8b8b91e91b3" EffectResourceGuid="e9d85c2f-cd90-76a2-0f29-faae8b2ae900" DetachSource="false" DetachTarget="false" KeepRotation="false" UseOrientDirection="false" UseDistance="false" UseScaleOverride="false" KeepScale="true" MainHand="false" OffHand="false" MinDistance="0" MaxDistance="0" BindSourceTo="SourceEntity" BindTargetTo="TargetEntity" Pivot="Target" Enabled="true" DamageType="None" VerbalIntent="None" TargetBone="Dummy_OverheadFX" SourceCheckEquipmentTagConditions="true" TargetCheckEquipmentTagConditions="true" />
+</MultiEffectInfos>

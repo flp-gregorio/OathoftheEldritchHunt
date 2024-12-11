@@ -1,0 +1,16 @@
+{
+  "FileVersion": 1,
+  "Progressions": [
+    {
+      "UUID": "ff4d9497-023c-434a-bd14-82fc367e991c",
+      "UUIDs": ["first-class-progression-uuid", "second-class-progression-uuid"],
+      "Subclasses": [
+        {
+          "UUID": "f583d52d-08b3-4645-9194-19141e251730",
+          "UUIDs": ["first-subclass-class-description-uuid", "second-subclass-class-description-uuid"],
+          "modGuid": "UUID Of Mod required for Insertion (Optional - defaults to the one that provides the config)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+function IsDivineSmiteSpells()
+    return
+        SpellId('Target_Smite_Divine') |
+        SpellId('Target_Smite_Divine_2') |
+        SpellId('Target_Smite_Divine_3') |
+        SpellId('Target_Smite_Divine_4') |
+        SpellId('Target_Smite_Divine_5') |
+        SpellId('Target_Smite_Divine_6')
+end

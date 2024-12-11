@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="3e76b74c-a5ae-4268-944a-aa9c31e2185e">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="8e224c67-6e63-42a4-976f-2bb845309c30" />
+        <field name="Name" type="NameTableFieldDefinition" value="Oath_Eldritch_Tenents" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="he98939cegba62gf89cg289cg39df35c9f599" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfac10564gd31cgc8f7g49c9g7724bbf85dfd" version="1" />
+        <field name="ExtraDescription" type="TranslatedStringTableFieldDefinition" handle="h81d6565fg8372g893fg7ae8gd9d75867a27a" version="2" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_DivineIntervention_Weapon" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="0" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="4168dbec-61ac-4bdf-9d6c-b748a06cc154" />
+        <field name="Name" type="NameTableFieldDefinition" value="EldritchHunt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="57c81a71-acd5-4238-b1d5-632a7497de77" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(LevelMapValue(D4Cantrip),Necrotic)" />
+        <field name="PriorityOrder" type="IntegerTableFieldDefinition" value="2" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="IF(HasStatus('ELDRITCH_PREY',context.Target,context.Source) and IsWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit)):CharacterWeaponDamage(LevelMapValue(D4Cantrip), Necrotic)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('ELDRITCH_PREY',context.Target,context.Source) and IsWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit) and TotalAttackDamageDoneGreaterThan(0)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(PASSIVE_ELDRITCH_PREY,100,0)" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="h01280d55g8810gb74agf374gb16afe2f60ed" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hea78e0b4gcbe7ge84cgd35ag5a06f5f383b3" version="4" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Eldritch_EldritchPrey" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="9b1168b0-1c77-422c-be1d-ec9b4fceb7ea" />
+        <field name="Name" type="NameTableFieldDefinition" value="RelentlessPursuer" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hef5b6833g5d9bg10e7g9e21gc3ea7e426aef" version="1" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Paladin_RelentlessPursuer" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnAttack" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="HasStatus('RELENTLESS_PURSUER',context.Target,context.Source) and IsWeaponAttack() and HasDamageEffectFlag(DamageFlags.Hit)" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="IF(not IsDivineSmite()):RegainHitPoints(SELF,CharismaModifier+ProficiencyBonus);IF(IsDivineSmite()):RegainHitPoints(SELF,(CharismaModifier+ProficiencyBonus)*2)" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hf5c364c1g7a2dg84dbg5462gdbd924cff1b7" version="2" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="RegainHitPoints(CharismaModifier+ProficiencyBonus)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d46ddc64-2a31-4b52-82b6-338974978e54" />
+        <field name="Name" type="NameTableFieldDefinition" value="RelentlessPursuit" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hec126feeg54b5g9b09g908ag245fa59d6aa1" version="2" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hfa54ba70gf913ga809g3ad9g648f71545c2e" version="3" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="Distance(6)" />
+        <field name="TooltipUseCosts" type="StringTableFieldDefinition" value="ReactionActionPoint:1" />
+        <field name="Icon" type="StringTableFieldDefinition" value="Action_Eldritch_EldritchPrey_Teleport" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="Highlighted" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnStatusApplied" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(UNRELENTING_PURSUIT_INTERRUPT_SETUP,100,-1)" />
+        <field name="Conditions" type="StringTableFieldDefinition" value="StatusId('ELDRITCH_PREY_OWNER')" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d400dcdd-435d-42d0-a2ef-ceccb4df9231" />
+        <field name="Name" type="NameTableFieldDefinition" value="PerfectedHunter" />
+        <field name="DisplayName" type="TranslatedStringTableFieldDefinition" handle="hb3b8053dgb023g610ege850g22bd836f8c0d" version="1" />
+        <field name="Description" type="TranslatedStringTableFieldDefinition" handle="hd4daa043g257ag5ca6g813bg32e6c8ff8eb8" version="4" />
+        <field name="DescriptionParams" type="StringTableFieldDefinition" value="DealDamage(1d8,Necrotic)" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+        <field name="Boosts" type="StringTableFieldDefinition" value="StatusImmunity(SG_Paralyzed); StatusImmunity(SG_Restrained);StatusImmunity(SG_Incapacitated);IF(IsWeaponAttack()):CharacterWeaponDamage(1d8,Necrotic)" />
+        <field name="StatsFunctorContext" type="EnumerationListTableFieldDefinition" value="OnCreate" enumeration_type_name="StatsFunctorContext" version="1" />
+        <field name="StatsFunctors" type="FunctorsTableFieldDefinition" value="ApplyStatus(HUNTER_INVISIBILITY,100,10)" />
+      </fields>
+    </stat_object>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="3d7e8b7c-2a3e-4c41-988d-5e66917cc5bb" />
+        <field name="Name" type="NameTableFieldDefinition" value="SpectralSlash" />
+        <field name="Properties" type="EnumerationListTableFieldDefinition" value="IsHidden" enumeration_type_name="PassiveFlags" version="1" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>

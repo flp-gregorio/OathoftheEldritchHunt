@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<stats stat_object_definition_id="239de60a-29b5-4010-bf7d-f6169d4ddd8a">
+  <stat_objects>
+    <stat_object is_substat="false">
+      <fields>
+        <field name="UUID" type="IdTableFieldDefinition" value="d65cbbec-688e-417c-aa84-16d16de6d7ff" />
+        <field name="Name" type="NameTableFieldDefinition" value="ARM_ScaleMail_Body_Paladin_EldritchHunt" />
+        <field name="Using" type="BaseClassTableFieldDefinition" value="5a66c5af-621a-4bbd-86cb-775477536313" />
+        <field name="RootTemplate" type="RootTemplateTableFieldDefinition" value="76e61f3b-a9a8-48ec-acf2-37a3e4419c92" />
+        <field name="PassivesOnEquip" type="StringTableFieldDefinition" clear_inherited_value="true" value="" />
+      </fields>
+    </stat_object>
+  </stat_objects>
+</stats>
